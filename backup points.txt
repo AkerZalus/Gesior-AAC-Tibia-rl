@@ -1,0 +1,2 @@
+mysql_query("UPDATE accounts SET backup_points = backup_points + '$NumItens' WHERE name = '".htmlspecialchars($accname)."'");
+UPDATE `accounts` SET `premium_points` = `accounts`.`backup_points` WHERE `backup_points` > 0;
